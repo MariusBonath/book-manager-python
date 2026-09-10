@@ -10,9 +10,6 @@ env/
 .idea/
 .vscode/
 
-# Project documentation (local only)
-CLAUDE.md
-
 # Binary data (generated at runtime)
 data/books/booklist.dat
 
