@@ -1,0 +1,24 @@
+
+{
+  "_comment": "Konfigurationsdatei für Book Manager – Spalten, Prompts und Validierung",
+  "prompts": [
+    "Bitte Nummer eingeben: ",
+    "Bitte Titel eingeben: ",
+    "Bitte Genre eingeben: ",
+    "Bitte Autor eingeben: ",
+    "Bitte Preis eingeben: ",
+    "Bitte Veröffentlichungsjahr eingeben: "
+  ],
+  "header": ["no", "title", "genre", "author", "price", "date"],
+  "col_widths": [6, 25, 6, 25, 10, 8],
+  "format_specs": [
+    ["DIGIT"],
+    ["ALL"],
+    ["ALNUM", "-"],
+    ["ALPHA", " ", "-", "&", ".", "'"],
+    ["FLOAT"],
+    ["DIGIT"]
+  ]
+}
+
+
