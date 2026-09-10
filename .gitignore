@@ -6,8 +6,12 @@ __pycache__/
 venv/
 env/
 
-# PyCharm
+# PyCharm / VS Code
 .idea/
+.vscode/
+
+# Project documentation (local only)
+CLAUDE.md
 
 # Binary data (generated at runtime)
 data/books/booklist.dat
