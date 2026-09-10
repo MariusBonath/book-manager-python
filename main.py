@@ -129,7 +129,7 @@ while True:
         # CSV-Import: Nutzer gibt den Dateipfad ein
         # Warnung: Import ersetzt die aktuelle Liste
         if lco._list:
-            warnung = input("⚠ Die aktuelle Liste wird ersetzt. Fortfahren? (J/N): ")
+            warnung = input("[!] Die aktuelle Liste wird ersetzt. Fortfahren? (J/N): ")
             if warnung.upper() != "J":
                 print("Import abgebrochen.")
                 continue
@@ -148,7 +148,7 @@ while True:
         # Programm sauber beenden
         # Erinnerung: Daten speichern nicht vergessen
         if lco._list:
-            print("💾 Hinweis: Vergiss nicht, deine Änderungen zu speichern (Taste 's')!")
+            print("[*] Hinweis: Vergiss nicht, deine Aenderungen zu speichern (Taste 's')!")
         print("Auf Wiedersehen!")
         break   # verlässt die while-Schleife
 

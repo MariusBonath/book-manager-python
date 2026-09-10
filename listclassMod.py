@@ -112,7 +112,7 @@ class Listclass:
                 return pickle.load(datei)   # Python-Objekt aus Binärdatei laden
         except (EOFError, pickle.UnpicklingError):
             # Speicherdatei beschädigt oder leer → leere Liste zurückgeben
-            print("⚠ Warnung: Speicherdatei beschädigt. Starte mit leerer Liste.")
+            print("[!] Warnung: Speicherdatei beschaedigt. Starte mit leerer Liste.")
             return []
 
 
@@ -208,7 +208,7 @@ class Listclass:
                             naechste_nr = "001"   # Liste ist leer → mit 001 starten
                     except (ValueError, IndexError):
                         # Beschädigte Nummer in letztem Eintrag → Fehlerbehandlung
-                        print("⚠ Fehler in der letzten Nummer. Setze Zähler zurück.")
+                        print("[!] Fehler in der letzten Nummer. Setze Zaehler zurueck.")
                         naechste_nr = "001"
                     sublist.append(naechste_nr)
                     continue   # Nummer nicht abfragen, direkt zum nächsten Feld
@@ -464,7 +464,7 @@ class Listclass:
                 int(zeile[0])
                 datensaetze.append(zeile)
             except ValueError:
-                print(f"⚠ Ignoriere Zeile mit ungültiger Nummer: {zeile}")
+                print(f"[!] Ignoriere Zeile mit ungueltiger Nummer: {zeile}")
                 continue
 
         # Aktuelle Liste durch importierte Daten ersetzen
